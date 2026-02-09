@@ -134,3 +134,87 @@ button {
     background-color: #FF5400;
     color: white;
 }
+
+
+/* DESTINATION RELATED STYELS */
+
+
+#destination{
+    margin-top: 100px;
+}
+.section-heading{
+    max-width: 643px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.section-title{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    color: #131318;
+
+}
+
+.section-description{
+    font-size:16px ;
+    color: rgba(19, 19, 24, 0.7);
+    line-height: 26px;
+    margin-bottom: 48px;
+}
+
+
+.destination-card-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    display:grid ;
+    gap: 24px;
+    grid-template-columns: repeat(12 ,1fr);
+    grid-template-rows: ;
+
+}
+
+.destination-card-container div:nth-child(1),.destination-card-container div:nth-child(2){
+    grid-column: span 6;
+}
+
+.destination-card-container div:nth-child(3){
+    grid-column: span 4;
+}
+
+.destination-card-container div:nth-child(4){
+    grid-column: span 5;
+}
+
+.destination-card-container div:nth-child(5){
+    grid-column: span 3;
+}
+
+.destination-card-container div:nth-child(6){
+    grid-column: span 5;
+}
+
+.destination-card-container div:nth-child(7){
+    grid-column: span 7;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    position: relative;
+}
+
+.place{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
