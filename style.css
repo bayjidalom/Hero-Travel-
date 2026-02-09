@@ -133,22 +133,24 @@ button {
 button {
     background-color: #FF5400;
     color: white;
+    display: block;
 }
 
 
 /* DESTINATION RELATED STYELS */
 
 
-#destination{
+#destination {
     margin-top: 100px;
 }
-.section-heading{
+
+.section-heading {
     max-width: 643px;
     margin: 0 auto;
     margin-bottom: 48px;
 }
 
-.section-title{
+.section-title {
     font-size: 40px;
     font-weight: 900;
     margin-bottom: 24px;
@@ -156,65 +158,159 @@ button {
 
 }
 
-.section-description{
-    font-size:16px ;
+.section-description {
+    font-size: 16px;
     color: rgba(19, 19, 24, 0.7);
     line-height: 26px;
     margin-bottom: 48px;
 }
 
 
-.destination-card-container{
+.destination-card-container {
     max-width: 1170px;
     margin: 0 auto;
-    display:grid ;
+    display: grid;
     gap: 24px;
-    grid-template-columns: repeat(12 ,1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: ;
 
 }
 
-.destination-card-container div:nth-child(1),.destination-card-container div:nth-child(2){
+.destination-card-container div:nth-child(1),
+.destination-card-container div:nth-child(2) {
     grid-column: span 6;
 }
 
-.destination-card-container div:nth-child(3){
+.destination-card-container div:nth-child(3) {
     grid-column: span 4;
 }
 
-.destination-card-container div:nth-child(4){
+.destination-card-container div:nth-child(4) {
     grid-column: span 5;
 }
 
-.destination-card-container div:nth-child(5){
+.destination-card-container div:nth-child(5) {
     grid-column: span 3;
 }
 
-.destination-card-container div:nth-child(6){
+.destination-card-container div:nth-child(6) {
     grid-column: span 5;
 }
 
-.destination-card-container div:nth-child(7){
+.destination-card-container div:nth-child(7) {
     grid-column: span 7;
 }
 
-.card img{
+.card img {
     height: 100%;
     width: 100%;
 }
 
-.card{
+.card {
     position: relative;
 }
 
-.place{
+.place {
     font-size: 28px;
     font-weight: 700;
     color: white;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
 }
 
 
+
+/* DEAL RELATED STYELS */
+
+.deal-section {
+
+    margin-top: 100px;
+}
+
+.heading-center {
+    text-align: center;
+}
+
+.deal-section .deal {
+    max-width: 1170px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.233)), url("./Images/Group\ 39.png");
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+    padding: 55px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+
+}
+
+/* .deal-section .deal-two{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.233)), url("./Images/Group\ 40.png");
+    justify-content: start;
+} */
+
+/* Smart Way is-- */
+.deal-section .deal:nth-child(n) {
+    justify-content: end;
+}
+
+
+.deal-section .deal:nth-child(2n) {
+    justify-content: start;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.233)), url("./Images/Group\ 40.png");
+}
+
+
+
+.deal-card {
+    max-width: 579px;
+    border: none;
+    padding: 50px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.705);
+
+}
+
+.deal-card>div {
+    display: flex;
+    gap: 24px;
+    font-size: 16px;
+    color: #5A5A5D;
+    margin-bottom: 24px;
+}
+
+.deal-card>h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #131318;
+    margin-bottom: 16px;
+}
+
+.deal-card>p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #5A5A5D;
+    margin-bottom: 16px;
+}
+
+.deal-price {
+    font-size: 20px;
+    font-weight: 900;
+    color: #FF5400;
+    /* margin-bottom: 24px; */
+
+}
+
+.deal-card>button {
+    margin-top: 24px;
+    max-width: fit-content;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 14px 25px;
+}
+
+.orange{
+    color: #FF5400;
+}
