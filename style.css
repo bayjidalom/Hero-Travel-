@@ -362,6 +362,30 @@ button {
     background-color: #FF5400;
     color: white;
     display: block;
+    
+    transition: transform 3s linear;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.tours-image {
+    max-width: 540px;
+}
+
+.tours-image img{
+    width: 100%;
+}
+
+
+.anchor{
+    transition: transform 2s linear , color 2s linear;
+}
+
+.anchor:hover{
+    transform: scale(1.3);
+    color: #FF5400;
 }
 
 
